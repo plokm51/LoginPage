@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="LogIN">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Log in/Sign up</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <a href="home.html"><img class="logo" src="img/logo.png"></a>
+    <div class="title">
+      <div class="login active">Log in</div>
+      <div class="register">Sign up</div>
+    </div>
+    <form class="login-form active">
+      <div>
+        <div  class="input-group">
+          <span class="icon icon-user-name"></span>
+          <input class="input-user-name" type="text" name="user-name" required placeholder="Name/Phone">
+          <span class="icon icon-true"></span>
+        </div>
+        <div class="tip tip-user-name">
+          <span class="icon icon-note"></span><span>account does not exist
+          </span>
+        </div>
+      </div>
+      
+      <div>
+        <div  class="input-group">
+          <span class="icon icon-password"></span>
+          <input class="input-password" type="password" name="password" required placeholder="Password">
+          <span class="icon icon-true"></span>
+        </div>
+        <div class="tip tip-user-name">
+          <span class="icon icon-note"></span><span>Error</span>
+        </div>
+      </div>
+      
+      <div class="input-group">
+        <input class="input-remember" type="checkbox" name="remember-password" value="true">
+        <span>Remember password
+        </span>
+        <span class="forget">Forgot?</span>
+      </div>
+      <button class="button-login" type="submit">Log in</button>
+      <div class="other">
+        <br>
+        <ul>
+          <li class="center"><img src="img/fox1.png"></li>
+        </ul>
+      </div>
+    </form>
+    <form class="register-form">
+      <div>
+        <div  class="input-group">
+          <span class="icon icon-phone-number"></span>
+          <input class="input-register-phone" type="text" name="register-phone-number" required placeholder="Phone">
+          <span class="icon icon-true"></span>
+        </div>
+        <div class="tip tip-user-name">
+          <span class="icon icon-note"></span><span>Registered!</span>
+        </div>
+      </div>
+      <div>
+        <div  class="input-group" style="display: none">
+          <span class="icon icon-ver-code"></span>
+          <input class="register-ver-code" type="text" name="register-ver-code" required placeholder="Verification code">
+          <span class="icon icon-true"></span>
+          <span class="ver-code">Verification code
+          </span>
+        </div>
+        <div class="tip tip-user-name">
+          <span class="icon icon-note"></span><span>
+            Verification code error</span>
+        </div>
+      </div>
+      <div>
+        <div  class="input-group">
+          <span class="icon icon-user-name"></span>
+          <input class="register-user-name" type="text" name="register-user-name" required placeholder="Name">
+          <span class="icon icon-true"></span>
+        </div>
+        <div class="tip tip-user-name">
+          <span class="icon icon-note"></span><span></span>
+        </div>
+      </div>
+      <div>
+        <div  class="input-group">
+          <span class="icon icon-password"></span>
+          <input class="register-password" type="password" name="register-password" required placeholder="Password">
+          <span class="icon icon-true"></span>
+        </div>
+        <div class="tip tip-user-name">
+          <span class="icon icon-note"></span><span>error</span>
+        </div>
+      </div>
+      <div>
+        <div  class="input-group">
+          <span class="icon icon-password"></span>
+          <input class="register-password2" type="password" name="register-password2" required placeholder="Confirm Password">
+          <span class="icon icon-true"></span>
+        </div>
+        <div class="tip tip-user-name">
+          <span class="icon icon-note"></span><span>password error</span>
+        </div>
+      </div>
+      <button class="button-register" type="submit">Sign in</button>
+    </form>
+    </div>
+    <div class="message-container">
+      <div class="message">
+        <div class="icon icon-true"></div>
+        <div class="message-text">Sign in suceesfully
+        </div>
+        <!-- <div class="message-text">关闭</div> -->
+      </div>
+    </div>
+    <!-- <a href="sms:13433894951">移动WEB页面JS一键发送短信咨询功能</a> -->
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery-cookie.js"></script>
+    <script type="text/javascript" src="login.js"></script>
+</body>
+</html>
+</div>
